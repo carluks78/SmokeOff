@@ -197,7 +197,7 @@ export default function HeroSection() {
               </div>
             </div>
             <ul className="space-y-1.5 mb-4">
-              {["2 séances simultanées", "Arrêtez ensemble !", "Suivi 60 jours", "Support psycho-émotionnel"].map((f) => (
+              {["2 séances simultanées", "Arrêtez ensemble !", "Suivi 30 jours", "Support psycho-émotionnel"].map((f) => (
                 <li key={f} className="flex items-center gap-2 text-white/75 text-sm">
                   <span style={{ color: "#00C9A7" }}>✓</span> {f}
                 </li>
