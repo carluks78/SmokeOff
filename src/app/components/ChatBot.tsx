@@ -138,7 +138,7 @@ useEffect(() => {
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             className="w-80 sm:w-96 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100"
             style={{
-  height: "85dvh",
+  height: "70dvh",
   maxHeight: "700px",
   display: "flex",
   flexDirection: "column",
