@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- PAGES PRINCIPALES -->
+
+  <url>
+    <loc>https://www.smokeoff.fr/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584480678234-963dc8a304ac?w=1200&amp;q=80</image:loc>
+      <image:title>SmokeOff Évreux — Arrêt du tabac au laser auriculaire</image:title>
+      <image:caption>Centre de sevrage tabagique laser à Évreux — Forfait Solo 180€ · Forfait Duo 350€</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/forfaits</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/reservation</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/contact</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- PAGES SERVICES ENRICHIES (nos soins) -->
+
+  <url>
+    <loc>https://www.smokeoff.fr/sevrage-tabagique-laser-evreux</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1719471497337-d140858e6ba7?w=1200&amp;q=80</image:loc>
+      <image:title>Sevrage Tabagique au Laser — SmokeOff Évreux</image:title>
+      <image:caption>Séance de laser thérapeutique pour l'arrêt du tabac — SmokeOff Évreux, 34 rue des Alouettes</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/auriculotherapie-laser-evreux</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1632568851266-b8e23c1738f5?w=1200&amp;q=80</image:loc>
+      <image:title>Auriculothérapie au Laser pour l'arrêt du tabac — SmokeOff Évreux</image:title>
+      <image:caption>Auriculothérapie laser sur le pavillon de l'oreille — sevrage tabagique naturel à Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/reflexologie-faciale-evreux</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1643684391140-c5056cfd3436?w=1200&amp;q=80</image:loc>
+      <image:title>Réflexologie Faciale — SmokeOff Évreux</image:title>
+      <image:caption>Séance de réflexologie faciale complémentaire pour le sevrage tabagique — SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <!-- PAGES VILLES ENRICHIES (géolocalisées) -->
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-evreux</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1763632276615-77a3df4d066f?w=1200&amp;q=80</image:loc>
+      <image:title>Évreux — Arrêt du tabac laser SmokeOff</image:title>
+      <image:caption>Évreux, Normandie — Centre SmokeOff sevrage tabagique au laser auriculaire, 34 rue des Alouettes</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-louviers</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1657095584055-2ad5589bb2f3?w=1200&amp;q=80</image:loc>
+      <image:title>Louviers — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Louviers, Eure — patients du centre SmokeOff Évreux (22 km) pour sevrage tabagique laser</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-vernon</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.87</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1629889639614-156fec963c88?w=1200&amp;q=80</image:loc>
+      <image:title>Vernon — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Vernon, Normandie — sevrage tabagique laser à 35 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-pacy-sur-eure</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1629213577711-9184c8675752?w=1200&amp;q=80</image:loc>
+      <image:title>Pacy-sur-Eure — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Pacy-sur-Eure, vallée de l'Eure — sevrage tabagique laser à 24 km, centre SmokeOff</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-gaillon</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1636534822776-42b859f25819?w=1200&amp;q=80</image:loc>
+      <image:title>Gaillon — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Gaillon, Eure — sevrage tabagique laser à 25 km du centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-val-de-reuil</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1657095584055-2ad5589bb2f3?w=1200&amp;q=80</image:loc>
+      <image:title>Val-de-Reuil — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Val-de-Reuil, Eure — sevrage tabagique laser à 20 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-conches-en-ouche</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1762015101892-46496da449b7?w=1200&amp;q=80</image:loc>
+      <image:title>Conches-en-Ouche — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Conches-en-Ouche, Pays d'Ouche — sevrage tabagique laser à 25 km du centre SmokeOff</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-nonancourt</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1636534822776-42b859f25819?w=1200&amp;q=80</image:loc>
+      <image:title>Nonancourt — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Nonancourt, Eure — sevrage tabagique laser à 24 km du centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-bernay</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1762015101877-e7764fcba717?w=1200&amp;q=80</image:loc>
+      <image:title>Bernay — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Bernay, ville médiévale de l'Eure — sevrage tabagique laser à 42 km, centre SmokeOff</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-dreux</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1695500274209-79324af68ca3?w=1200&amp;q=80</image:loc>
+      <image:title>Dreux — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Dreux, Eure-et-Loir — sevrage tabagique laser à 48 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-les-andelys</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1694955695334-2ed9cfc13983?w=1200&amp;q=80</image:loc>
+      <image:title>Les Andelys — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Les Andelys, Seine — sevrage tabagique laser à 42 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-giverny</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1650466978178-a85d8f972445?w=1200&amp;q=80</image:loc>
+      <image:title>Giverny — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Giverny, jardins de Monet, Normandie — sevrage tabagique laser à 38 km, centre SmokeOff</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-rouen</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1604649863570-dbede007bb87?w=1200&amp;q=80</image:loc>
+      <image:title>Rouen — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Rouen, capitale normande — sevrage tabagique laser à 80 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-pont-audemer</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1762015101877-e7764fcba717?w=1200&amp;q=80</image:loc>
+      <image:title>Pont-Audemer — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Pont-Audemer, Venise normande — sevrage tabagique laser à 55 km, centre SmokeOff</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-gisors</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1627471277979-7fec7e255313?w=1200&amp;q=80</image:loc>
+      <image:title>Gisors — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Gisors, Eure — sevrage tabagique laser à 50 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-verneuil-sur-avre</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.79</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1636534822776-42b859f25819?w=1200&amp;q=80</image:loc>
+      <image:title>Verneuil-sur-Avre — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Verneuil-sur-Avre, Eure — sevrage tabagique laser à 40 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-elbeuf</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.79</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1657095584055-2ad5589bb2f3?w=1200&amp;q=80</image:loc>
+      <image:title>Elbeuf — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Elbeuf, Seine-Maritime — sevrage tabagique laser à 35 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-pont-de-l-arche</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1604649863570-dbede007bb87?w=1200&amp;q=80</image:loc>
+      <image:title>Pont-de-l'Arche — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Pont-de-l'Arche, Eure — sevrage tabagique laser à 28 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.smokeoff.fr/arret-tabac-laser-breteuil</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1762015101892-46496da449b7?w=1200&amp;q=80</image:loc>
+      <image:title>Breteuil — Arrêt tabac laser SmokeOff Évreux</image:title>
+      <image:caption>Breteuil, Eure — sevrage tabagique laser à 30 km, centre SmokeOff Évreux</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Villes proches sans image spécifique -->
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-gravigny</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-guichainville</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.73</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-le-vieil-evreux</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.73</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-saint-sebastien-de-morsent</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-parville</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-arnieres-sur-iton</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.71</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-normanville</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.71</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-acquigny</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.71</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-cailly-sur-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-garennes-sur-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-la-croix-saint-leufroy</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-saint-andre-de-l-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-damville</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.69</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-jouy-sur-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.69</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-croisy-sur-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.69</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-aubevoye</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-hardencourt-cocherel</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-houlbec-cocherel</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.67</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-menilles</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.67</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-bueil</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.67</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-ezy-sur-eure</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.67</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-bourth</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-gasny</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-rugles</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-l-aigle</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-fleury-sur-andelle</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-romilly-sur-andelle</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-igoville</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-alizay</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-douains</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
+  <url><loc>https://www.smokeoff.fr/arret-tabac-laser-fains</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
+
+</urlset>

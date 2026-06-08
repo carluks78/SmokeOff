@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.smokeoff.fr/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin/private paths
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /admin/
+
+# Allow important assets
+Allow: /og-logo.png
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Specific bot optimizations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
