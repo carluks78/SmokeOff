@@ -77,10 +77,10 @@ export default function FormulesSection() {
         {/* Reassurance */}
         <div className="mt-12 text-center">
           <p className="text-white/40 text-sm">
-            💡 Un fumeur à 10 cigarettes/jour dépense environ 150–180€/mois. Une seule séance s'autofinance en un mois d'économies.
+            💡 Un fumeur à 20 cigarettes/jour dépense environ 390–405€/mois. Une seule séance s'autofinance en à peine un mois d'économies.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mt-6">
-            {["Séance 100% remboursée si efficace → sur devis", "Paiement en 2× possible", "Aucun frais cachés"].map((txt) => (
+            {["Séance 100% efficace → sur devis", "Aucun frais cachés"].map((txt) => (
               <div key={txt} className="flex items-center gap-2 text-white/50 text-sm">
                 <Check className="w-4 h-4" style={{ color: "#00C9A7" }} /> {txt}
               </div>
