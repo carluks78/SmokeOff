@@ -171,7 +171,7 @@ export const HOME_FAQS = [
   },
   {
     q: "En combien de séances arrête-t-on de fumer ?",
-    a: "Pour la plupart des patients, une seule séance suffit. Selon les études et notre expérience, plus de 80% des personnes arrêtent après la première séance. Pour les cas d'addiction sévère ou en cas de rechute, une deuxième séance peut être proposée à tarif réduit.",
+    a: "Pour la plupart des patients, une seule séance suffit. Selon les études et notre expérience, plus de 80% des personnes arrêtent après la première séance. Pour les cas d'addiction sévère ou en cas de rechute, une deuxième séance est offerte.",
   },
   {
     q: "Le laser est-il douloureux ou dangereux ?",
