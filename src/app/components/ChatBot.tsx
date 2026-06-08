@@ -212,14 +212,17 @@ useEffect(() => {
             </div>
 
             {/* Quick questions */}
-            <div className="px-3 py-2 bg-white border-t border-gray-50">
-              <p className="text-xs text-gray-400 mb-2 px-1">Questions fréquentes :</p>
-              <div className="flex flex-wrap gap-1.5">
+<div className="px-3 py-2 bg-white border-t border-gray-50 shrink-0">
+  <p className="text-xs text-gray-400 mb-2 px-1">
+    Questions fréquentes :
+  </p>
+
+  <div className="flex gap-1.5 overflow-x-auto pb-1">
                 {QUICK_QUESTIONS.map((q) => (
                   <button
                     key={q}
                     onClick={() => sendMessage(q)}
-                    className="text-xs px-3 py-1.5 rounded-full border transition-colors text-gray-600 hover:border-[#00C9A7] hover:text-[#00C9A7] bg-white border-gray-200"
+                    className="whitespace-nowrap flex-shrink-0 text-xs px-3 py-1.5 rounded-full border transition-colors text-gray-600 hover:border-[#00C9A7] hover:text-[#00C9A7] bg-white border-gray-200"
                   >
                     {q}
                   </button>
