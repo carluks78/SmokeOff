@@ -164,7 +164,13 @@ useEffect(() => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3" style={{ minHeight: 200, maxHeight: 360, backgroundColor: "#F8FFFE" }}>
+            <div
+  ref={messagesContainerRef}
+  className="flex-1 overflow-y-auto p-4 space-y-3"
+  style={{
+    backgroundColor: "#F8FFFE"
+  }}
+>
               {messages.map((msg, i) => (
                 <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                   {msg.role === "bot" && (
@@ -203,7 +209,6 @@ useEffect(() => {
                   </div>
                 </div>
               )}
-              <div ref={messagesEndRef} />
             </div>
 
             {/* Quick questions */}
