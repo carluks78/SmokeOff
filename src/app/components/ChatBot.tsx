@@ -101,11 +101,14 @@ export default function ChatBot() {
   ]);
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (open) messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, open]);
+useEffect(() => {
+  if (messagesContainerRef.current) {
+    messagesContainerRef.current.scrollTop =
+      messagesContainerRef.current.scrollHeight;
+  }
+}, [messages]);
 
   const sendMessage = (text: string) => {
     if (!text.trim()) return;
@@ -134,7 +137,12 @@ export default function ChatBot() {
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             className="w-80 sm:w-96 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100"
-            style={{ maxHeight: "80vh", display: "flex", flexDirection: "column" }}
+            style={{
+  height: "85dvh",
+  maxHeight: "700px",
+  display: "flex",
+  flexDirection: "column",
+}}
           >
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4" style={{ background: "linear-gradient(135deg, #0A1F3A 0%, #0d2d4a 100%)" }}>
