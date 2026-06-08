@@ -44,7 +44,7 @@ const SERVICE_CONTENT: Record<string, {
       "Stimulation complémentaire des points de stress et des voies respiratoires",
       "Réflexologie faciale pour renforcer et amplifier les effets",
       "Protocole anti-fringales pour éviter la compensation alimentaire",
-      "Suivi téléphonique personnalisé sur 30 à 60 jours post-séance",
+      "Suivi téléphonique personnalisé sur 30 jours post-séance",
     ],
     faqs: [
       { q: "Comment le laser agit-il concrètement sur l'envie de fumer ?", a: "Le laser froid stimule les points auriculaires correspondant à l'addiction nicotinique. Cette stimulation déclenche la libération d'endorphines naturelles dans le cerveau, qui compensent le manque de nicotine. Le signal de craving (envie de fumer) est ainsi court-circuité à sa source neurologique, sans passer par un substitut chimique." },
@@ -374,7 +374,7 @@ export default function ServicePage() {
               { icon: Shield, title: "Sans médicaments", desc: "Aucun médicament, aucun substitut nicotinique. Votre corps produit lui-même ses propres compensateurs.", color: "#3b82f6" },
               { icon: Clock, title: "45 minutes en 1 séance", desc: "Une seule visite de 45 minutes suffit dans la grande majorité des cas. Pas de séances répétées à prix élevé.", color: "#f59e0b" },
               { icon: Award, title: "Praticienne certifiée", desc: "Formation spécialisée en laser thérapeutique, auriculothérapie et réflexologie. Protocoles reconnus.", color: "#8b5cf6" },
-              { icon: Leaf, title: "Suivi 30 à 60 jours", desc: "Suivi téléphonique personnalisé inclus pour éviter la rechute et consolider les résultats dans la durée.", color: "#00C9A7" },
+              { icon: Leaf, title: "Suivi 30 jours", desc: "Suivi téléphonique personnalisé inclus pour éviter la rechute et consolider les résultats dans la durée.", color: "#00C9A7" },
             ].map(({ icon: Icon, title, desc, color }) => (
               <motion.div
                 key={title}
