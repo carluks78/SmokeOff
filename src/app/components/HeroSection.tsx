@@ -5,6 +5,10 @@ import { PHONE, PHONE_LINK, WHATSAPP_NUMBER } from "../lib/seoData";
 
 const HERO_IMAGE = "https://images.unsplash.com/photo-1584480678234-963dc8a304ac?w=1400&q=80";
 
+// ─── Promo été : passe à true pour afficher, false pour masquer ────────────
+const PROMO_ACTIVE = true;
+// ──────────────────────────────────────────────────────────────────────────
+
 function WhatsAppIcon() {
   return (
     <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current flex-shrink-0">
@@ -72,7 +76,73 @@ export default function HeroSection() {
         />
       ))}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+      {/* ─── BANNIÈRE PROMO ÉTÉ ─────────────────────────────────────────── */}
+      {PROMO_ACTIVE && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="absolute top-0 left-0 right-0 z-20"
+        >
+          <div
+            className="mx-4 lg:mx-8 mt-4 rounded-2xl px-6 py-4 md:px-10 md:py-5 border border-[#00C9A7]/30 flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+            style={{ background: "linear-gradient(135deg, rgba(10,31,58,0.97) 0%, rgba(0,60,42,0.95) 100%)", backdropFilter: "blur(12px)" }}
+          >
+            {/* Label */}
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <span className="text-xl">🌴</span>
+              <div>
+                <span
+                  className="inline-block text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-0.5"
+                  style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}
+                >
+                  Offre été · 25 juil → 15 août
+                </span>
+                <p className="text-white font-bold text-base md:text-lg leading-tight">
+                  Vacances = moment idéal pour arrêter de fumer 🌿
+                </p>
+                <p className="text-white/55 text-xs mt-0.5">Moins de stress, plus de sérénité — profitez-en !</p>
+              </div>
+            </div>
+
+            {/* Tarifs promo */}
+            <div className="flex items-center gap-4 flex-wrap">
+              {/* Solo */}
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5">
+                <div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Solo</p>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-white/30 text-sm line-through">180 €</span>
+                    <span className="text-[#00C9A7] text-2xl font-bold">150 €</span>
+                  </div>
+                </div>
+              </div>
+              {/* Duo */}
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5">
+                <div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Duo</p>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-white/30 text-sm line-through">350 €</span>
+                    <span className="text-[#00C9A7] text-2xl font-bold">290 €</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <Link
+              to="/reservation"
+              className="flex-shrink-0 inline-flex items-center justify-center gap-2 font-bold text-sm px-6 py-3 rounded-xl transition-all hover:opacity-90 hover:scale-105 md:ml-auto"
+              style={{ backgroundColor: "#00C9A7", color: "#0A1F3A" }}
+            >
+              J'en profite →
+            </Link>
+          </div>
+        </motion.div>
+      )}
+      {/* ─────────────────────────────────────────────────────────────────── */}
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full" style={{ marginTop: PROMO_ACTIVE ? "100px" : "0" }}>
         {/* LEFT — content */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           {/* Badge */}
@@ -81,7 +151,6 @@ export default function HeroSection() {
             <span className="text-xs font-semibold" style={{ color: "#00C9A7" }}>N°1 Sevrage tabagique laser Évreux · 89 patients satisfaits</span>
           </div>
 
-          {/* H1 optimisé SEO rank #1 Évreux */}
           <h1 className="font-bold text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", lineHeight: 1.1 }}>
             Arrêtez de fumer
             <span className="block" style={{ color: "#00C9A7" }}>en 1 séance laser</span>
@@ -127,10 +196,10 @@ export default function HeroSection() {
           {/* Trust badges */}
           <div className="flex flex-wrap gap-5">
             {[
-              { icon: Zap, text: "Laser Auriculaire" },
+              { icon: Zap,    text: "Laser Auriculaire" },
               { icon: Shield, text: "Sans Médicaments" },
-              { icon: Users, text: "Forfait Duo 350€" },
-              { icon: Star, text: "80% Réussite" },
+              { icon: Users,  text: "Forfait Duo 350€" },
+              { icon: Star,   text: "80% Réussite" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-white/55 text-sm">
                 <Icon className="w-4 h-4" style={{ color: "#00C9A7" }} />
@@ -160,8 +229,18 @@ export default function HeroSection() {
                 <h3 className="text-white text-xl font-bold">Solo</h3>
               </div>
               <div className="text-right">
-                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>180 €</p>
+                {PROMO_ACTIVE && (
+                  <p className="text-white/35 text-sm line-through">180 €</p>
+                )}
+                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
+                  {PROMO_ACTIVE ? "150 €" : "180 €"}
+                </p>
                 <p className="text-white/40 text-xs">par personne</p>
+                {PROMO_ACTIVE && (
+                  <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
+                    🌞 Offre été
+                  </span>
+                )}
               </div>
             </div>
             <ul className="space-y-1.5 mb-4">
@@ -192,8 +271,18 @@ export default function HeroSection() {
                 <h3 className="text-white text-xl font-bold">Duo</h3>
               </div>
               <div className="text-right">
-                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>350 €</p>
+                {PROMO_ACTIVE && (
+                  <p className="text-white/35 text-sm line-through">350 €</p>
+                )}
+                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
+                  {PROMO_ACTIVE ? "290 €" : "350 €"}
+                </p>
                 <p className="text-white/40 text-xs">pour 2 personnes</p>
+                {PROMO_ACTIVE && (
+                  <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
+                    🌞 Offre été
+                  </span>
+                )}
               </div>
             </div>
             <ul className="space-y-1.5 mb-4">
