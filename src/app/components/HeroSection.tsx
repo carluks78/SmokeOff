@@ -142,7 +142,7 @@ export default function HeroSection() {
       )}
       {/* ─────────────────────────────────────────────────────────────────── */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full" style={{ marginTop: PROMO_ACTIVE ? "100px" : "0" }}>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full" style={{ paddingTop: PROMO_ACTIVE ? "160px" : "80px", paddingBottom: "80px" }}>
         {/* LEFT — content */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           {/* Badge */}
