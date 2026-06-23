@@ -15,7 +15,7 @@ export default function Reservation() {
     const msg = `🔥 Nouvelle demande de RDV — SmokeOff.fr\n\n` +
       `👤 Nom : ${form.name}\n📧 Email : ${form.email}\n📱 Tél : ${form.phone}\n` +
       `📅 Date souhaitée : ${form.date} à ${form.hour}\n` +
-      `💼 Forfait : ${form.forfait === "solo" ? "Offre été Solo du 25 Juillet au 15 Aout 150€" : "Offre été Duo du 25 Juillet au 15 Aout 290€"}\n` +
+      `💼 Forfait : ${form.forfait === "solo" ? "Solo 150€" : "Duo 290€"}\n` +
       `📝 Notes : ${form.notes || "Aucune"}`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
     setSent(true);
