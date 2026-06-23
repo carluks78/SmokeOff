@@ -45,7 +45,7 @@ function GoogleStars() {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden">
+    <section className="relative flex flex-col overflow-hidden" style={{ minHeight: "92vh" }}>
       {/* Background image */}
       <img
         src={HERO_IMAGE}
@@ -76,16 +76,16 @@ export default function HeroSection() {
         />
       ))}
 
-      {/* ─── BANNIÈRE PROMO ÉTÉ ─────────────────────────────────────────── */}
-      {PROMO_ACTIVE && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="absolute top-0 left-0 right-0 z-20"
-        >
-          <div
-            className="mx-4 lg:mx-8 mt-4 rounded-2xl px-6 py-4 md:px-10 md:py-5 border border-[#00C9A7]/30 flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+      {/* Contenu en flex-col dans le flux — bannière PUIS hero */}
+      <div className="relative z-10 flex flex-col flex-1 max-w-7xl mx-auto w-full px-4 lg:px-8">
+
+        {/* ─── BANNIÈRE PROMO ÉTÉ — dans le flux, pas en absolute ────────── */}
+        {PROMO_ACTIVE && (
+          <motion.div
+            initial={{ opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-4 rounded-2xl px-6 py-4 md:px-8 md:py-4 border border-[#00C9A7]/30 flex flex-col md:flex-row md:items-center gap-3 md:gap-6"
             style={{ background: "linear-gradient(135deg, rgba(10,31,58,0.97) 0%, rgba(0,60,42,0.95) 100%)", backdropFilter: "blur(12px)" }}
           >
             {/* Label */}
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 >
                   Offre été · 25 juil → 15 août
                 </span>
-                <p className="text-white font-bold text-base md:text-lg leading-tight">
+                <p className="text-white font-bold text-sm md:text-base leading-tight">
                   Vacances = moment idéal pour arrêter de fumer 🌿
                 </p>
                 <p className="text-white/55 text-xs mt-0.5">Moins de stress, plus de sérénité — profitez-en !</p>
@@ -106,25 +106,19 @@ export default function HeroSection() {
             </div>
 
             {/* Tarifs promo */}
-            <div className="flex items-center gap-4 flex-wrap">
-              {/* Solo */}
-              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5">
-                <div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Solo</p>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-white/30 text-sm line-through">180 €</span>
-                    <span className="text-[#00C9A7] text-2xl font-bold">150 €</span>
-                  </div>
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-2">
+                <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Solo</p>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-white/30 text-xs line-through">180 €</span>
+                  <span className="text-[#00C9A7] text-xl font-bold">150 €</span>
                 </div>
               </div>
-              {/* Duo */}
-              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5">
-                <div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Duo</p>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-white/30 text-sm line-through">350 €</span>
-                    <span className="text-[#00C9A7] text-2xl font-bold">290 €</span>
-                  </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-2">
+                <p className="text-white/40 text-[10px] uppercase tracking-wider">Forfait Duo</p>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-white/30 text-xs line-through">350 €</span>
+                  <span className="text-[#00C9A7] text-xl font-bold">290 €</span>
                 </div>
               </div>
             </div>
@@ -132,186 +126,180 @@ export default function HeroSection() {
             {/* CTA */}
             <Link
               to="/reservation"
-              className="flex-shrink-0 inline-flex items-center justify-center gap-2 font-bold text-sm px-6 py-3 rounded-xl transition-all hover:opacity-90 hover:scale-105 md:ml-auto"
+              className="flex-shrink-0 inline-flex items-center justify-center gap-2 font-bold text-sm px-5 py-2.5 rounded-xl transition-all hover:opacity-90 md:ml-auto"
               style={{ backgroundColor: "#00C9A7", color: "#0A1F3A" }}
             >
               J'en profite →
             </Link>
-          </div>
-        </motion.div>
-      )}
-      {/* ─────────────────────────────────────────────────────────────────── */}
+          </motion.div>
+        )}
+        {/* ─────────────────────────────────────────────────────────────────── */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full" style={{ paddingTop: PROMO_ACTIVE ? "160px" : "80px", paddingBottom: "80px" }}>
-        {/* LEFT — content */}
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 border" style={{ backgroundColor: "rgba(0,201,167,0.15)", borderColor: "rgba(0,201,167,0.4)" }}>
-            <Star className="w-3.5 h-3.5 fill-current" style={{ color: "#00C9A7" }} />
-            <span className="text-xs font-semibold" style={{ color: "#00C9A7" }}>N°1 Sevrage tabagique laser Évreux · 89 patients satisfaits</span>
-          </div>
+        {/* Hero principal */}
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
 
-          <h1 className="font-bold text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", lineHeight: 1.1 }}>
-            Arrêtez de fumer
-            <span className="block" style={{ color: "#00C9A7" }}>en 1 séance laser</span>
-            <span className="block text-white/90" style={{ fontSize: "0.75em" }}>à Évreux — Normandie</span>
-          </h1>
-
-          <p className="text-white/75 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-            <strong className="text-white">SmokeOff Évreux</strong> est le centre spécialisé en{" "}
-            <strong className="text-white">sevrage tabagique au laser auriculaire</strong>,{" "}
-            <strong className="text-white">auriculothérapie</strong> et{" "}
-            <strong className="text-white">réflexologie faciale</strong> dans l'Eure.
-            Méthode naturelle, indolore, sans médicaments. Plus de <strong className="text-white">80% de réussite</strong> dès la 1ʳᵉ séance.
-          </p>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <a
-              href={PHONE_LINK}
-              className="inline-flex items-center justify-center gap-2 text-white font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 shadow-xl"
-              style={{ backgroundColor: "#00C9A7" }}
-            >
-              <Phone className="w-5 h-5" /> {PHONE}
-            </a>
-            <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Bonjour, je souhaite prendre rendez-vous pour un sevrage tabagique au laser. ")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20B358] text-white font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg"
-            >
-              <WhatsAppIcon /> Réserver via WhatsApp
-            </a>
-          </div>
-
-          {/* Google review + trust */}
-          <div className="flex flex-wrap gap-4 items-center mb-8">
-            <GoogleStars />
-            <div className="flex items-center gap-2 text-white/60 text-sm">
-              <MapPin className="w-4 h-4" style={{ color: "#00C9A7" }} />
-              34 rue des Alouettes, 27000 Évreux
+          {/* LEFT — content */}
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 border" style={{ backgroundColor: "rgba(0,201,167,0.15)", borderColor: "rgba(0,201,167,0.4)" }}>
+              <Star className="w-3.5 h-3.5 fill-current" style={{ color: "#00C9A7" }} />
+              <span className="text-xs font-semibold" style={{ color: "#00C9A7" }}>N°1 Sevrage tabagique laser Évreux · 89 patients satisfaits</span>
             </div>
-          </div>
 
-          {/* Trust badges */}
-          <div className="flex flex-wrap gap-5">
-            {[
-              { icon: Zap,    text: "Laser Auriculaire" },
-              { icon: Shield, text: "Sans Médicaments" },
-              { icon: Users,  text: "Forfait Duo 350€" },
-              { icon: Star,   text: "80% Réussite" },
-            ].map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-center gap-2 text-white/55 text-sm">
-                <Icon className="w-4 h-4" style={{ color: "#00C9A7" }} />
-                <span>{text}</span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+            <h1 className="font-bold text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", lineHeight: 1.1 }}>
+              Arrêtez de fumer
+              <span className="block" style={{ color: "#00C9A7" }}>en 1 séance laser</span>
+              <span className="block text-white/90" style={{ fontSize: "0.75em" }}>à Évreux — Normandie</span>
+            </h1>
 
-        {/* RIGHT — pricing cards */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col gap-4 lg:max-w-sm"
-        >
-          {/* Solo */}
-          <motion.div
-            className="rounded-2xl p-6 border backdrop-blur-sm"
-            style={{ backgroundColor: "rgba(255,255,255,0.07)", borderColor: "rgba(0,201,167,0.25)" }}
-            whileHover={{ y: -3, scale: 1.01 }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-white/50 text-xs uppercase tracking-wider mb-0.5">Forfait</p>
-                <h3 className="text-white text-xl font-bold">Solo</h3>
-              </div>
-              <div className="text-right">
-                {PROMO_ACTIVE && (
-                  <p className="text-white/35 text-sm line-through">180 €</p>
-                )}
-                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
-                  {PROMO_ACTIVE ? "150 €" : "180 €"}
-                </p>
-                <p className="text-white/40 text-xs">par personne</p>
-                {PROMO_ACTIVE && (
-                  <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
-                    🌞 Offre été
-                  </span>
-                )}
+            <p className="text-white/75 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+              <strong className="text-white">SmokeOff Évreux</strong> est le centre spécialisé en{" "}
+              <strong className="text-white">sevrage tabagique au laser auriculaire</strong>,{" "}
+              <strong className="text-white">auriculothérapie</strong> et{" "}
+              <strong className="text-white">réflexologie faciale</strong> dans l'Eure.
+              Méthode naturelle, indolore, sans médicaments. Plus de <strong className="text-white">80% de réussite</strong> dès la 1ʳᵉ séance.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <a
+                href={PHONE_LINK}
+                className="inline-flex items-center justify-center gap-2 text-white font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 shadow-xl"
+                style={{ backgroundColor: "#00C9A7" }}
+              >
+                <Phone className="w-5 h-5" /> {PHONE}
+              </a>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Bonjour, je souhaite prendre rendez-vous pour un sevrage tabagique au laser. ")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20B358] text-white font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg"
+              >
+                <WhatsAppIcon /> Réserver via WhatsApp
+              </a>
+            </div>
+
+            <div className="flex flex-wrap gap-4 items-center mb-8">
+              <GoogleStars />
+              <div className="flex items-center gap-2 text-white/60 text-sm">
+                <MapPin className="w-4 h-4" style={{ color: "#00C9A7" }} />
+                34 rue des Alouettes, 27000 Évreux
               </div>
             </div>
-            <ul className="space-y-1.5 mb-4">
-              {["Séance laser 45 min", "Bilan personnalisé", "Anti-fringales inclus", "Suivi 30 jours"].map((f) => (
-                <li key={f} className="flex items-center gap-2 text-white/65 text-sm">
-                  <span style={{ color: "#00C9A7" }}>✓</span> {f}
-                </li>
+
+            <div className="flex flex-wrap gap-5">
+              {[
+                { icon: Zap,    text: "Laser Auriculaire" },
+                { icon: Shield, text: "Sans Médicaments" },
+                { icon: Users,  text: "Forfait Duo 350€" },
+                { icon: Star,   text: "80% Réussite" },
+              ].map(({ icon: Icon, text }) => (
+                <div key={text} className="flex items-center gap-2 text-white/55 text-sm">
+                  <Icon className="w-4 h-4" style={{ color: "#00C9A7" }} />
+                  <span>{text}</span>
+                </div>
               ))}
-            </ul>
-            <Link to="/reservation" className="block w-full text-center text-[#0A1F3A] font-bold py-2.5 rounded-xl text-sm transition-opacity hover:opacity-90" style={{ backgroundColor: "rgba(0,201,167,0.7)" }}>
-              Réserver →
-            </Link>
+            </div>
           </motion.div>
 
-          {/* Duo */}
+          {/* RIGHT — pricing cards */}
           <motion.div
-            className="rounded-2xl p-6 border-2 relative backdrop-blur-sm"
-            style={{ backgroundColor: "rgba(0,201,167,0.12)", borderColor: "#00C9A7" }}
-            whileHover={{ y: -3, scale: 1.01 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col gap-4 lg:max-w-sm"
           >
-            <div className="absolute -top-3 left-5">
-              <span className="text-xs font-bold text-[#0A1F3A] px-3 py-1 rounded-full" style={{ backgroundColor: "#00C9A7" }}>⭐ POPULAIRE</span>
-            </div>
-            <div className="flex items-center justify-between mb-4 mt-2">
-              <div>
-                <p className="text-white/50 text-xs uppercase tracking-wider mb-0.5">Forfait</p>
-                <h3 className="text-white text-xl font-bold">Duo</h3>
+            {/* Solo */}
+            <motion.div
+              className="rounded-2xl p-6 border backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(255,255,255,0.07)", borderColor: "rgba(0,201,167,0.25)" }}
+              whileHover={{ y: -3, scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-wider mb-0.5">Forfait</p>
+                  <h3 className="text-white text-xl font-bold">Solo</h3>
+                </div>
+                <div className="text-right">
+                  {PROMO_ACTIVE && <p className="text-white/35 text-sm line-through">180 €</p>}
+                  <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
+                    {PROMO_ACTIVE ? "150 €" : "180 €"}
+                  </p>
+                  <p className="text-white/40 text-xs">par personne</p>
+                  {PROMO_ACTIVE && (
+                    <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
+                      🌞 Offre été
+                    </span>
+                  )}
+                </div>
               </div>
-              <div className="text-right">
-                {PROMO_ACTIVE && (
-                  <p className="text-white/35 text-sm line-through">350 €</p>
-                )}
-                <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
-                  {PROMO_ACTIVE ? "290 €" : "350 €"}
-                </p>
-                <p className="text-white/40 text-xs">pour 2 personnes</p>
-                {PROMO_ACTIVE && (
-                  <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
-                    🌞 Offre été
-                  </span>
-                )}
-              </div>
-            </div>
-            <ul className="space-y-1.5 mb-4">
-              {["2 séances simultanées", "Arrêtez ensemble !", "Suivi 30 jours", "Support psycho-émotionnel"].map((f) => (
-                <li key={f} className="flex items-center gap-2 text-white/75 text-sm">
-                  <span style={{ color: "#00C9A7" }}>✓</span> {f}
-                </li>
-              ))}
-            </ul>
-            <Link to="/reservation" className="block w-full text-center text-[#0A1F3A] font-bold py-3 rounded-xl text-sm transition-all hover:opacity-90" style={{ backgroundColor: "#00C9A7" }}>
-              Réserver maintenant →
-            </Link>
-          </motion.div>
+              <ul className="space-y-1.5 mb-4">
+                {["Séance laser 45 min", "Bilan personnalisé", "Anti-fringales inclus", "Suivi 30 jours"].map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-white/65 text-sm">
+                    <span style={{ color: "#00C9A7" }}>✓</span> {f}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/reservation" className="block w-full text-center text-[#0A1F3A] font-bold py-2.5 rounded-xl text-sm transition-opacity hover:opacity-90" style={{ backgroundColor: "rgba(0,201,167,0.7)" }}>
+                Réserver →
+              </Link>
+            </motion.div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-3">
-            {[{ v: "80%+", l: "Réussite" }, { v: "45min", l: "Séance" }, { v: "89", l: "Avis 5★" }].map(({ v, l }) => (
-              <div key={l} className="rounded-xl p-3 text-center backdrop-blur-sm" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.08)" }}>
-                <p className="font-bold text-lg" style={{ color: "#00C9A7" }}>{v}</p>
-                <p className="text-white/40 text-[10px]">{l}</p>
+            {/* Duo */}
+            <motion.div
+              className="rounded-2xl p-6 border-2 relative backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(0,201,167,0.12)", borderColor: "#00C9A7" }}
+              whileHover={{ y: -3, scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="absolute -top-3 left-5">
+                <span className="text-xs font-bold text-[#0A1F3A] px-3 py-1 rounded-full" style={{ backgroundColor: "#00C9A7" }}>⭐ POPULAIRE</span>
               </div>
-            ))}
-          </div>
-        </motion.div>
+              <div className="flex items-center justify-between mb-4 mt-2">
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-wider mb-0.5">Forfait</p>
+                  <h3 className="text-white text-xl font-bold">Duo</h3>
+                </div>
+                <div className="text-right">
+                  {PROMO_ACTIVE && <p className="text-white/35 text-sm line-through">350 €</p>}
+                  <p className="text-4xl font-bold" style={{ color: "#00C9A7" }}>
+                    {PROMO_ACTIVE ? "290 €" : "350 €"}
+                  </p>
+                  <p className="text-white/40 text-xs">pour 2 personnes</p>
+                  {PROMO_ACTIVE && (
+                    <span className="inline-block mt-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: "rgba(0,201,167,0.2)", color: "#00C9A7" }}>
+                      🌞 Offre été
+                    </span>
+                  )}
+                </div>
+              </div>
+              <ul className="space-y-1.5 mb-4">
+                {["2 séances simultanées", "Arrêtez ensemble !", "Suivi 30 jours", "Support psycho-émotionnel"].map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-white/75 text-sm">
+                    <span style={{ color: "#00C9A7" }}>✓</span> {f}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/reservation" className="block w-full text-center text-[#0A1F3A] font-bold py-3 rounded-xl text-sm transition-all hover:opacity-90" style={{ backgroundColor: "#00C9A7" }}>
+                Réserver maintenant →
+              </Link>
+            </motion.div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-3">
+              {[{ v: "80%+", l: "Réussite" }, { v: "45min", l: "Séance" }, { v: "89", l: "Avis 5★" }].map(({ v, l }) => (
+                <div key={l} className="rounded-xl p-3 text-center backdrop-blur-sm" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.08)" }}>
+                  <p className="font-bold text-lg" style={{ color: "#00C9A7" }}>{v}</p>
+                  <p className="text-white/40 text-[10px]">{l}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-6 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 1.5, repeat: Infinity }}
       >
